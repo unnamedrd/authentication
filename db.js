@@ -1,6 +1,7 @@
 const Mongoose = require("mongoose")
 
 const dbConnectionStr = process.env.DB_STRING,
+/* variable for db, test */
 
 const connectDB = async () => {
     Mongoose.connect(RemoteDB)

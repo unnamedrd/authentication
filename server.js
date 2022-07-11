@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const PORT = 5500
+
 let dbConnectionStr = process.env.DB_STRING,
 const connectDB = require('./db')
 
