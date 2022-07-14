@@ -1,5 +1,8 @@
-const user = require('.../model/user')
-const User = require('../model/user')
+const User = require('.../model/user')
+const app = express()
+
+app.use(express.json())
+
 
 exports.register = async (req, res, next) => {
     const { username, password } = req.body

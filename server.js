@@ -7,6 +7,8 @@ const connectDB = require('./db')
 
 connectDB()
 
+app.use(express.json())
+
 const server = app.listen(PORT, () => console.log(`Server Connected to port ${PORT}`))
 
 process.on('unhandledRejection', err =>{
