@@ -4,7 +4,7 @@ const dbConnectionStr = process.env.DB_STRING,
 /* variable for db, test */
 
 const connectDB = async () => {
-    Mongoose.connect(dbConnectionStr)
+    await Mongoose.connect(dbConnectionStr)
         .then(client => {
             console.log("MongoDB connection succesful")
     })
